@@ -1,58 +1,55 @@
-#include <stdio.h>
-int main() {
 
+#include <stdio.h>  
+int main()  
+{ 
+    int number1, number2;   
+    float answer;
+    char op;
+    
+    printf (" Enter the operation to perform(+, -, *, /) \n ");  
+    scanf ("%c", &op);
+    printf (" Enter the first number: ");  
+    scanf(" %d", &number1); 
+    printf (" Enter the second number: ");  
+    scanf (" %d", &number2); 
+    
+    //addition  
+    if (op == '+')  
+    {  
+        answer = number1 + number2; 
+        printf (" %d + %d = %f", number1, number2, answer);  
+    }  
+    
+    //substraction  
+    else if (op == '-')  
+    {  
+        answer = number1 - number2; 
+        printf (" %d - %d = %f", number1, number2, answer);  
+    }  
+    
+    //multiplication  
+    else if (op == '*')  
+    {  
+        answer = number1 * number2;  
+        printf (" %d * %d = %f", number1, number2, answer);  
+    }  
+    
+    //division  
+    else if (op == '/')  
+    {  
+        if (number2 == 0) 
+        {  
+            printf (" \n Divisor cannot be zero. Please enter another value ");  
+            scanf ("%d", &number2);        
+        }  
+        answer = number1 / number2; 
+        printf (" %d / %d = %.2f", number1, number2, answer);  
+    }  
+    else  
+    {  
+        printf(" \n Enter valid operator ");  
+    }  
+    return 0;  
 }
-
-char operator;
-double firstNumber, secondNumber, results;
-printf( firsNumber, secondNumber, results);
- 
-//  user operator
-
-    printf("enter an operators, (+, -, *, / ) : ");
-scanf("%c"&operators);
-
-printf("enter two operands" );
-scanf(%lf %lf, firstNumber, secondNumber,  results);
-
-switch(operators);
-
-    case'-';
-
-int printf("firstNumber - secondNumber" );
-
-int scanf(".%2lf - .%2lf", );
-
-case'+';
-
-int printf("firstNumber + secondNumber" );
-int scanf(".%2lf + .%2lf": );
-
-case'*';
-
-int printf("firstNumber * secondNumber" );
-int scanf(".%2lf * .%2lf": );
-
-case'/';
-
-if(secondNumber ! = 0);
-
-    else(firstNumber, secondNumber, results);
-    printf("firstNumber / secondNumber" );
-    scanf(".%2lf /.%2lf":);
-
-    // defining an error
-
-    if(firstNumber !) = 0;{
-
-    else(secondNumber, firstNumber, results);
-
-    printf("secondNumber / firsNumber" );
-scanf(".%2lf + .%2lf" );
-
-
-}
-
-return = 0;
 
 
